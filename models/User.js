@@ -20,7 +20,7 @@ User.init(
         },
         // define username column
         username: {
-            type: DataTypes,stringify,
+            type: DataTypes.STRING,
             allowNull: false
         },
         // define email column
