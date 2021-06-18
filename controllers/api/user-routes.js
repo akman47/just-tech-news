@@ -76,7 +76,7 @@ router.post('/', (req, res) => {
 });
 
 // login route for authentication
-router.post('/login', withAuth, (req, res) => {
+router.post('/login', (req, res) => {
     // expects {email: '', password:''}
     User.findOne({
         where: {
